@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav ul .list::after {
+    @apply absolute content-[''] h-xs rounded-lg left-0 -bottom-1 bg-bluish w-0 transition-all duration-500;
+}
+
+nav ul .list:hover::after {
+    @apply md:w-full;
+}
+

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/svg+xml" href="images/icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <link rel="stylesheet" href="./dist/output.css">
+    <script src="./app.js" defer></script>
+    <title>Crypto</title>
+</head>
+<body class="text-sans selection:bg-dark selection:text-white scroll-smooth">
+    <header class="bg-dark text-white h-auto overflow-x-hidden">
+        <nav class="container md:w-10/12 md:flex md:justify-between items-end md:pt-4 md:pr-0 md:pl-0 sticky">
+            <div class="flex justify-between items-center md:h-full">
+                <img src="images/logo.svg" class="" alt="logo crappo">
+                <svg class="w-6 h-20 md:hidden" id="open-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+            <div class="text-center h-full w-full text-lg relative md:static md:w-auto md:h-full">
+                <ul class="container bg-dark flex justify-start items-center h-screen md:h-auto flex-col pt-8 transition-all duration-500 fixed z-50 left-full md:flex md:flex-row md:static md:pt-0 md:text-normal md:p-0 md:mr-0 md:ml-0">
+                    <svg class="w-6 h-6 self-end mr-8 mb-24 md:hidden" id="close-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                    <a href="#" class="mb-8 md:mb-0 md:mr-4 relative"><li class="list">Products</li></a>
+                    <a href="#" class="mb-8 md:mb-0 md:mr-4 relative"><li class="list">Features</li></a>
+                    <a href="#" class="mb-8 md:mb-0 md:mr-4 relative"><li class="list">About</li></a>
+                    <a href="#" class="mb-8 md:mb-0  md:mr-8 relative"><li class="list">Contact</li></a>
+                    <div class="auth flex justify-center items-center mb-8  md:mb-0 md:mr-8">
+                        <a href="#" class="mr-8 md:mr-4 hover:text-bluish"><li>Login</li></a>
+                        <span class="text-gray-400">|</span>
+                        <a href="#" class="ml-8 md:ml-4 bg-bluish py-1.5 px-3.5 rounded-full hover:drop-shadow-text-lg"><li>Register</li></a>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="container md:w-10/12 py-10 md:pr-0 md:pl-0 flex justify-between flex-col md:flex-row gap-y-10" style="background-image: url('./images/hero-bg.png'); background-size: contain;">
+            <!---HERO-->
+            <div class="self-center">
+                <p class="bg-save w-fit py-2 px-1 text-xs font-normal rounded-full my-4"><span class="bg-white text-dark font-semibold px-3 py-1.5 rounded-full mr-2">75% SAVE</span> For the Black Friday weekend </p>
+                <h1 class="font-bold text-2xl w-full md:w-3/4 pt-4">Fastest & secure platform to invest in crypto</h1>
+                <p class="text-xs w-full md:w-1/2 pt-4 my-3">Buy and sell cryptocurrencies, trusted by 10M wallets with over $30 billion in transactions.</p>
+                <a href="#" class="bg-bluish py-2 px-4 rounded-full hover:drop-shadow-text-lg text-xs flex items-center w-fit">Try for FREE 
+                    <span class="bg-white text-bluish ml-2" style="border-radius: 50%;">
+                        <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+                    </span>
+                </a>
+            </div>
+            <div>
+                <img src="./images/hero-img.png" class="object-cover" alt="cryptocurrency">
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="bg-dark py-16">
+            <!------WHY CRAPPO?-------------->
+            <div class="container md:w-10/12 md:pr-0 md:pl-0 flex justify-center items-center gap-y-16 flex-col md:justify-between md:flex-row">
+
+                <div class="flex justify-between items-center gap-x-4">
+                    <div class="bg-save p-3 rounded-full text-bluish">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+                        </svg>
+                    </div>
+                    <div>    
+                        <h2 class="text-lg font-bold">$30B</h2>
+                        <p class="text-normal font-light">Digital Currency Exchanged</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center gap-x-5">
+                    <div class="bg-save p-3 rounded-full text-bluish">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                        </svg>                          
+                    </div>
+                    <div>
+                        <h2  class="text-lg font-bold">10M+</h2>
+                        <p class="text-normal font-light">Trusted Wallets Investor</p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between items-center gap-x-5">
+                    <div class="bg-save p-3 rounded-full text-bluish">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525" />
+                        </svg>                          
+                    </div>
+                    <div>
+                        <h2  class="text-lg font-bold">195</h2>
+                        <p class="text-normal font-light">Countries Supported</p>
+                    </div> 
+                </div>
+
+            </div>
+
+            <div class="container md:w-10/12 md:pr-0 md:pl-0 flex justify-center items-center gap-y-8 flex-col-reverse md:justify-between md:flex-row mt-10 md:mt-0">
+                <div>
+                    <img src="images/why-img.png" class="object-cover" alt="why choose us?">
+                </div>
+                <div>
+                    <h2 class="font-bold text-xl w-full md:w-3/4">Why you should choose CRAPPO?</h2>
+                    <p class="text-normal font-light w-full md:w-3/4 mt-10 mb-8">Experience the next generation cryptocurrency platform. No financial borders, extra fees, and fake reviews.</p>
+                    <a href="#" class="bg-bluish py-1.5 px-3.5 rounded-full hover:drop-shadow-text-lg text-normal">Learn More</a>        
+                </div>
+            </div>
+
+        </section>
+
+    <section class="bg-dark py-16 relative">
+        <!----EARN-->
+        <div class="container md:w-10/12 md:pr-0 md:pl-0 flex justify-center items-center flex-col text-center mb-52 md:mb-36">
+            <h2 class="font-bold text-xl w-full md:w-3/4">Check how much you can earn</h2>
+            <p class="text-normal font-light w-full md:w-3/4 mt-10">Let’s check your hash rate to see how much you will earn today,</p>
+            <p class="text-normal font-light w-full md:w-3/4">Exercitation veniam consequat sunt nostrud amet.</p>
+        </div>
+
+        <div class="absolute left-1/2 -translate-x-1/2 -translate-y-1/2 w-11/12 md:w-9/12 bg-white text-black drop-shadow-text-xl rounded-2xl">
+            <form class="p-4 flex justify-center align-center gap-y-8 flex-col md:flex-row md:gap-x-8">
+                    <input 
+                    type="text" 
+                    placeholder="Enter your hash rate"
+                    class="p-2 bg-transparent w-full text-sm flex-1 border-transparent border-b-2 border-b-gray-300 focus:outline-none focus:border-black rounded-none caret-bluish focus:placeholder:text-gray-600 basis-4/6 placeholder:text-black placeholder:text-normal" required>
+                    <select class="basis-3/12 p-2 bg-transparent w-full text-sm flex-1 border-transparent border-b-2 border-b-gray-300 focus:outline-none focus:border-black rounded-none focus:placeholder:text-gray-600 placeholder:text-black" required>
+                        <option value="TH/s" class="">TH/s</option>
+                        <option value="H/s">H/s</option>
+                        <option value="KH/s">KH/s</option>
+                        <option value="MH/s">MH/s</option>
+                        <option value="GH/s">GH/s</option>
+                    </select>
+                    <button type="submit" class="bg-bluish text-white mx-auto py-1.5 px-3.5 rounded-full hover:drop-shadow-text-sm text-normal inline-block">Calculate</button>
+            </form>
+            <div class="p-4">
+                <h2 class="text-xs text-bluish font-semibold pb-2">ESTIMATED 24 HOUR REVENUE:</h2>
+                <h1 class="font-bold text-base pb-4">0.055 130 59 ETH <span class="text-bluish">($1275)</span></h1>
+                <p class="text-normal pb-5">Revenue will change based on mining difficulty and Ethereum price.</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="bg-gray-200 py-16">
+        <!--CRYPTOCURRENCIES-->
+        <div class="container md:w-10/12 md:pr-0 md:pl-0 flex justify-center items-center flex-col text-center">
+            <h1 class="font-bold text-xl text-dark w-full md:w-3/4 mt-40 md:mt-24">Trade securely and market the high growth cryptocurrencies.</h1>
+            
+            <div class="flex justify-center flex-col md:justify-between items-center md:flex-row gap-y-6 md:gap-x-6 cursor-pointer">
+                <!---Crypto-cards-->
+                <div class="bg-dark rounded-xl py-6 px-0">
+                    <img src="images/bitcon.png" 
+                    class="object-cover mx-auto my-5"
+                    alt="bitcoin">
+                    <h2 class="title font-bold text-base my-5 flex justify-center items-center gap-2">Bitcoin <span class="text-xs font-light text-gray-500 block">BTC</span></h2>
+                    <p class="text-normal my-4 text-center w-3/4 mx-auto">Digital currency in which a record of transactions is maintained.</p>
+                    <a href="#" class="bg-bluish py-3.5 px-2.5 rounded-full hover:drop-shadow-text-lg text-normal">Start Mining
+                        <span class="bg-white text-bluish ml-2 inline-block translate-y-1" style="border-radius: 50%;">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </span>
+                    </a>        
+                </div>
+
+                <div class="bg-white rounded-xl py-3 px-0">
+                    <img src="images/ethereum.png" 
+                    class="object-cover mx-auto my-5"
+                    alt="bitcoin">
+                    <h2 class="title font-bold text-base my-5 flex justify-center items-center gap-2 text-dark">Ethereum <span class="text-xs font-light text-gray-500 block">ETH</span></h2>
+                    <p class="text-normal my-4 text-center w-3/4 mx-auto text-gray-500">Blockchain technology to create and run decentralized digital applications.</p>
+                    <a href="#" class="text-normal">
+                        <span class="bg-white text-bluish border border-gray-500 ml-2 inline-block" style="border-radius: 50%;">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </span>
+                    </a>        
+                </div>
+
+                <div class="bg-white rounded-xl py-3 px-0">
+                    <img src="images/litecoin.png" 
+                    class="object-cover mx-auto my-5"
+                    alt="bitcoin">
+                    <h2 class="title font-bold text-base my-5 flex justify-center items-center gap-2 text-dark">Litecoin <span class="text-xs font-light text-gray-500 block">LTC</span></h2>
+                    <p class="text-normal my-4 text-center w-3/4 mx-auto text-gray-500">Cryptocurrency that enables instant payments to anyone in the world.</p>
+                    <a href="#" class="text-normal">
+                        <span class="bg-white text-bluish border border-gray-500 ml-2 inline-block" style="border-radius: 50%;">
+                            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </span>
+                    </a>        
+                </div>
+            
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-dark py-16">
+        <!----------FEATURES------------->
+        <div class="container md:w-10/12 md:pr-0 md:pl-0">
+            <h2 class="font-bold text-center text-xl w-full md:mx-auto md:w-3/4 my-12">Market sentiments, portfolio, and run the infrastructure of your choice</h2>
+            <div class="flex justify-center items-center flex-col gap-y-5 md:gap-y-0 md:gap-x-5 md:justify-between md:flex-row">
+                <div class="self-start">
+                    <h2 class="font-bold text-base w-full">Invest Smart</h2>
+                    <p class="text-normal my-4 w-3/4 text-gray-500">Get full statistic information about the behaviour of buyers and sellers will help you to make the decision. </p>
+                    <a href="#" class="bg-bluish py-1.5 px-3.5 rounded-full hover:drop-shadow-text-lg text-normal">Learn More</a> 
+                </div>
+                <div>
+                    <img src="images/feature-1-img.png" 
+                    class="object-cover"
+                    alt="Invest Smarter">
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section class="bg-dark py-16 md:py-0 md:pt-16 md:pb-36">
+        <!----------FEATURES2------------->
+            <div class="container relative md:w-10/12 md:pr-0 md:pl-0 flex justify-center items-center flex-col-reverse gap-y-5 md:gap-y-0 md:gap-x-20 md:justify-between md:flex-row">
+                <div class="">
+                    <img src="images/feature-2-img.png" 
+                    class="object-cover md:w-3/5 md:absolute -top-32 -left-32"
+                    alt="Statistics">
+                </div>
+                <div class="self-start md:basis-1/2">
+                    <h2 class="font-bold text-base w-full">Detailed Statistics</h2>
+                    <p class="text-normal my-4 w-3/4 text-gray-500">View all mining related information in realtime, at any point at any location and decide which polls you want to mine in.</p>
+                    <a href="#" class="bg-bluish py-1.5 px-3.5 rounded-full hover:drop-shadow-text-lg text-normal">Learn More</a> 
+                </div>
+            </div>
+    </section>
+
+    <section class="bg-dark py-16">
+
+        <!----------FEATURES------------->
+        <div class="container md:w-10/12 md:pr-0 md:pl-0">
+            <div class="flex justify-center items-center flex-col gap-y-5 md:gap-y-0 md:gap-x-5 md:justify-between md:flex-row">
+                <div class="self-start">
+                    <h2 class="font-bold text-base w-full">Grow your profit and track your investments</h2>
+                    <p class="text-normal my-4 w-3/4 text-gray-500">Use advanced analytical tools. Clear TradingView charts let you track current and historical profit investments.</p>
+                    <a href="#" class="bg-bluish py-1.5 px-3.5 rounded-full hover:drop-shadow-text-lg text-normal">Learn More</a> 
+                </div>
+                <div>
+                    <img src="images/feature-3-img.png" 
+                    class="object-cover"
+                    alt="Invest Smarter">
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section class="bg-dark py-16 text-white" style="background-image: url('./images/hero-bg.png'); background-size: contain;">
+        <div class="w-11/12 md:w-9/12 bg-bluish drop-shadow-text-xl rounded-2xl mx-auto flex justify-center flex-col items-center gap-y- md:justify-between md:gap-x-1 md:gap-y-0 md:flex-row" style="background-image: url('./images/newsletter-box.png'); background-size: contain;">
+            <div class="p-4 basis-1/2 self-start">
+                <h2 class="text-base font-semibold pb-1">Start mining now</h2>
+                <p class="text-xs my-4 w-full md:w-2/3">Join now with CRAPPO to get the latest news and start mining now</p>
+            </div>
+            <div class="p-4 w-full md:basis-1/2">
+                <form>
+                    <input
+                    class="w-full block md:w-2/3 md:inline md:p-2 bg-transparent text-sm flex-1 border-transparent border-b-2 border-b-gray-300 focus:outline-none focus:border-white rounded-none caret-dark focus:placeholder:text-gray-600 basis-4/6 placeholder:text-white placeholder:text-normal"
+                    placeholder="Enter your email"
+                    type="email" required>
+                    
+                    <button type="submit" class="bg-white text-dark py-1.5 px-3.5 mt-4 mx-auto rounded-full hover:drop-shadow-text-sm text-normal font-semibold block md:inline">Subscribe</button>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+    </main>
+
+    <footer class="bg-dark">
+        <div class="container md:pr-0 md:pl-0  md:w-10/12 py-10">
+            
+            <div class="flex justify-center items-center flex-col gap-y-5 md:gap-y-0 md:gap-x-16 md:justify-between md:flex-row">
+                <div class="self-start justify-start mx-auto md:basis-1/6">
+                    <img src="./images/logo.svg" class="md:w-3/4" alt="logo">
+                </div>
+                <div class="text-center md:text-left">
+                    <h2 class="text-sm font-semibold mb-3 tracking-wider">Quick Link</h2>
+                    <ul>
+                        <a href="#" class="text-normal hover:text-bluish"><li class="list">Home</li></a>
+                        <a href="#" class="text-normal hover:text-bluish"><li class="list">Products</li></a>
+                        <a href="#" class="text-normal hover:text-bluish"><li class="list">Features</li></a>
+                        <a href="#" class="text-normal hover:text-bluish"><li class="list">About</li></a>
+                        <a href="#" class="text-normal hover:text-bluish"><li class="list">Contact</li></a>
+
+                    </ul>
+                </div>
+                <div class="text-center md:text-left">
+                    <h2 class="text-sm font-semibold mb-3 tracking-wider">Resources</h2>
+                    <ul>
+                        <a href="#" class="text-normal hover:text-bluish pb-5"><li class="list">Download Whitepaper</li></a>
+                        <a href="#" class="text-normal hover:text-bluish pb-5"><li class="list">Smart Token</li></a>
+                        <a href="#" class="text-normal hover:text-bluish pb-5"><li class="list">Blockchain</li></a>
+                        <a href="#" class="text-normal hover:text-bluish pb-5"><li class="list">Crypto API</li></a>
+                        <a href="#" class="text-normal hover:text-bluish pb-5"><li class="list">Intrest</li></a>
+                    </ul>
+                </div>
+                <div class="w-fit self-start">
+                    <h1 class="text-sm font-semibold md:text-base mb-3 tracking-wide w-3/4">We accept following payment systems</h1>
+                    <div class="flex gap-y-5 gap-x-5 justify-between ">
+                        <img 
+                        src="./images/visa.png" 
+                        class="object-cover block"
+                        alt="Visa payment">
+
+                        <img 
+                        src="./images/mastercard.png" 
+                        class="object-cover block"
+                        alt="mastercard payment">
+
+                        <img 
+                        src="./images/bitcoin.png" 
+                        class="object-cover block"
+                        alt="Crypto payment">
+                    </div>
+                </div>
+            </div>
+
+            <div class="my-5 flex justify-center items-center flex-col gap-y-5 md:gap-y-0 md:gap-x-5 md:justify-between md:flex-row">
+                <div>
+                    <h2 class="text-normal">©2022 CRAPPO. All rights reserved</h2>
+                </div>
+                <div>
+                   <img src="./images/facebook-f 1.svg" class="inline ml-2 h-6 w-6" alt="facebook">
+                   <img src="./images/instagram 1.svg" class="inline ml-2 h-6 w-6" alt="instagram">
+                   <img src="./images/youtube 1.svg" class="inline ml-2 h-6 w-6" alt="youtube">
+                   <img src="./images/twitter 1.svg" class="inline ml-2 h-6 w-6" alt="twitter">
+                   <img src="./images/linkedin 1.svg" class="inline ml-2 h-6 w-6" alt="linkedin">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
