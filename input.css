@@ -11,3 +11,10 @@ nav ul .list:hover::after {
     @apply md:w-full;
 }
 
+.fade-in {
+    @apply  opacity-0 scale-50 transition-all ease-in duration-slow;
+}
+.faded {
+    @apply opacity-100 scale-100;
+}
+
