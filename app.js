@@ -33,7 +33,7 @@ const observer = new IntersectionObserver( entries => {
         if(entry.target.classList.contains("slide-b")) entry.target.classList.toggle("slided", entry.isIntersecting);       
     })
 }, {
-    threshold: .65,
+    threshold: .7,
 });
 
 // Fade In to display

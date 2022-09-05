@@ -9,6 +9,7 @@ module.exports = {
         dark: "#0D0D2B",
         dark2: "#2B076E",
         light: "#5C59A5",
+        greyish:"#E0E0E0",
         secondary: "#2B076E",
         bluish: "#3671E9",
         save: "rgb(75,85,99)",
