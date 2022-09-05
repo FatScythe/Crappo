@@ -63,6 +63,9 @@ const clickCard = (el) => {
     card.classList.remove("bg-white");
     card.classList.add("bg-dark");
 
+    card.classList.remove("drop-shadow-text-sh");
+    card.classList.add("drop-shadow-text-sh");
+
     title.classList.remove("text-dark");
     title.classList.add("text-white");
 
@@ -91,9 +94,11 @@ const unClickCard = (el1, el2) => {
 
     card1.classList.add("bg-white");
     card1.classList.remove("bg-dark");
+    card1.classList.remove("drop-shadow-text-sh");
 
     card2.classList.add("bg-white");
     card2.classList.remove("bg-dark");
+    card2.classList.remove("drop-shadow-text-sh");
 
     title1.classList.add("text-dark");
     title1.classList.remove("text-white");
